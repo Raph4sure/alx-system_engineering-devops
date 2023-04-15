@@ -1,0 +1,47 @@
+WHAT HAPPENS WHEN YOU TYPE WWW.GOOGLE.COM AND PRESS ENTER IN YOUR BROWSER.
+
+This article is one of the questions given to me as an ALX-Africa software engineering student and I will cover in simple terms what goes behind the scene when you are browsing with your remote browser.
+Have you ever wondered what happened when you are using Google to get information and how Google is able to get almost all the information you want online? If you have ever consider this then this article is just for you, sit back as I take you through a ride.
+In this article I am going to cover the following internet infrastructures:
+•	DNS request
+•	TCP/IP
+•	FIREWALL
+•	HTTPS/SSL
+•	LOAD-BALANCER
+•	WEB SERVER
+•	APPLICATION
+•	DATABASE
+Before we explain the process let us know what these terms are:
+DNS:  This stands for Domain Name System. It is a hierarchical naming system that translate human-readable domains (such as www.raph4sure.tech) into machine-readable IP addresses (such as 241.342.54.23). By now we should know that computers work in binary codes and don’t actually understand human language. When you type in an address such as www.missjoe.tech which is in the human form, the DNS converts it to the language that the computer understands such as 241.342.54.23 etc. This is to say that if not for DNS you will have to memorize numbers and complex codes before you can browse. Now assuming you are looking for www.raph4sure.tech, which is easy to memorize instead you start memorizing 241.342.54.23, I can imagine your face now. So spare some time and thank Paul Mockapetris and Jon Postel the people that developed DNS.
+TCP/IP: Stands for Transmission Control Protocol/Internet Protocol; these are suite of communication protocols that are used to connect devices on the internet. It is a set of rules that governs how data is transmitted between devices and networks, enabling different systems to communicate with each other. 
+TCP is responsible for establishing a reliable connection between two devices and ensuring that data is transmitted in the correct order. It breaks down large data packets into smaller segments and reassembles them on the receiving end. This also regulates the rate at which data is sent to avoid overwhelming the recipient device.
+IP, on the other hand, is responsible for the addressing and routing of data packets across the internet. It assigns a unique IP address to each device on the network and ensures that data is delivered to the correct destination.
+Together, TCP/IP provides a standardized method of communication that allows different devices and networks to interoperate and exchange data. We can relate IP/TCP as your network providers that direct your calls to appropriate channels.
+FIREWALL: A firewall is a network security system to prevent unauthorized access to or from a private network. It is essentially a barrier that sits between a private internal network and the public internet, and it can be hard-ware based, Software-based or combination of both.
+In addition to preventing unauthorized access to a network, firewalls can also be used to prevent outgoing traffic from certain applications or to filter out unwanted content such as spam or malware. Firewalls are an important component of network security and are used by organizations of all sizes to protect their networks from external threats. In local term a fire wall is like your bullet proof.
+HTTPS/SSL: HTTPS (Hypertext Transfer Protocol Secure) is a secure version of HTTP that encrypts all data exchanged between a web server and a user’s web browser. This ensures that any sensitive information, such as login credentials, credit card numbers, and other personal data, is protected from interception and hacking attempts.
+HTTPs uses SSL (Secure Sockets Layer) or its successor TLS (Transport Layer Security) to establish an encrypted communication channel between the web server and the user’s browser. SSL/TLS works by using digital certificates to authenticate the identity of the web server and to establish a secure connection between the server and the browser.
+When a user visits a website with HTTPS, their browser checks the server’s digital certificate to ensure that it is valid and issued by a trusted certificate authority. Once the connection is established, all data exchanged between the browser  and the server is encrypted, making it difficult for hackers to intercept and read.
+LOAD-BALANCER: A load balancer just like the name, it’s a device or software application that distributes network traffic evenly across multiple servers or data centers. The main purpose of a load balancer is to prevent any single server from becoming overwhelmed with requests and causing performance degradation or downtime.
+Load balancers work by monitoring the health of servers and directing traffic to the most available and healthy server. They use various algorithms, such as round-robin, least connections, IP hash, and others, to determine which server should receive a request.
+Load balancing can improve the performance, availability, and scalability of web application, databases, and other network-based services. By distributing the load across multiple servers, it can reduce response times, handle more concurrent users, and provide redundancy and failover protection.
+WEB SERVER: A web server is a software application that runs on a computer and is responsible for serving web content, such as HTML pages, images, videos, and other files, to clients over the internet. The web server accepts requests from clients, such as web browsers, and responds with the requested content.
+A web server typically uses the HTTP (Hypertext Transfer Protocol) or HTTPS (HTTP Secure) protocol to communicate with clients. 
+APPLICATION: An application or ‘app’ for sure, is a software program that is designed to perform a specific function or set of functions for the user. Applications can be run on various devices, including desktop computers, mobile devices, and other electronic devices.
+DATABASE: A database is a collection of organized and structured data that is stored and managed in a computer system. Databases are used to store and retrieve large amounts of data quickly and efficiently, and to provide access to this data for applications and users.
+Now that we have knowledge of all these terms the question is what really happens when you browse on the internet using your browser?
+In summary this is the simple step of what goes on
+1.	You enter a URL or click on a link: when you enter a URL (Uniform Resource Locator) or click on a link, your browser sends a request to the web server for the webpage or resources that you want to access.
+2.	DNS resolution: your browser sends a request to the DNS (Domain Name System) server to resolve the domain name in the URL to an IP (Internet Protocol) address, which is the unique identifier of the web server that hosts the webpage.
+3.	TCP connection: Your browser establishes a TCP (Transmission Control Protocol) connection with the web server to exchange data, such as the requested webpage or resource.
+4.	HTTP request: Your browser sends an HTTP request to the webserver, which includes information such as the type of request (GET, POST, etc.), the requested resource, and other headers.
+5.	Server response: The web server sends an HTTP response back to your browser, which includes the requested resources (such as the HTML code of the webpage), along with other headers and metadata.
+6.	Rendering the webpage: Your browser receives the HTML code of the webpage and begins to render it, which involves interpreting the HTML, CSS, and JavaScript code, and displaying the content of the webpage on your screen.
+7.	Additional requests: your browser may send additional requests to the web server for other resources, such as images, videos, or scripts, which are needed fully to render the webpage.
+8.	Closing the connection: Once the webpage is fully rendered, your browser closes TCP connection with the web server.
+Browsing the internet in your browser involves a series of requests and responses between your browser and web servers, which enable you to access and view web content.
+I hope this article will be helpful to you, please make contributions and corrections in the comment session.
+Written by:
+Alabi Gbenga Raphael
+Alx-Africa software engineering student.
+
