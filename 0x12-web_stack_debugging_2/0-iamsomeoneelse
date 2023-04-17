@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# This is a Bash Script that accept one argument,
+# The Script will run 'whoami' command under the user passed as an arguemnt
+
+if [ "$1" ]
+	then
+	sudo -u "$1" whoami
+fi
