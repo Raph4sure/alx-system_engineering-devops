@@ -6,6 +6,7 @@ containing the titles of all hot articles for a given subreddit.
 
 import requests
 
+
 def recurse(subreddit, hot_list=[], after=None):
     """
     Recursively fetches hot articles for a given subreddit and returns

@@ -3,6 +3,7 @@
 
 import requests
 
+
 def top_ten(subreddit):
     """Returns the top 10 posts for a subreddit"""
     url = 'https://www.reddit.com/r/{}/hot.json'.format(subreddit)
